@@ -1,14 +1,25 @@
- /* Base Styles */
-body {
+/* Reset & Base */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
-  background-color: #f7f7f7;
-  color: #333;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
 }
 
+
+
+
+
+
+/* Containers */
 .container {
-  width: 90%;
+  width: 90;
   max-width: 1200px;
   margin: auto;
   padding: 1rem;
@@ -16,33 +27,35 @@ body {
 
 /* Header */
 .site-header {
-  background-color: #18392b;
+  background:#18392b ;
   color: white;
   padding: 1rem 0;
 }
-
 .site-header .logo {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
-
 .nav {
   list-style: none;
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-top: 0.5rem;
+  justify-content: flex-end;
 }
-
-.nav li a {
-  color: white;
+.nav li a, .nav button {
+  color: var(--footer-text);
   text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
 }
 
-.nav li a:hover {
-  text-decoration: underline;
-}
+
+
+
+
+
 
 /* Main Content */
 main h2 {

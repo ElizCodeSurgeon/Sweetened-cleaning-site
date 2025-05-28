@@ -1,11 +1,11 @@
-/* Reset & Base */
-* {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
+ body {
+   margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: white;
+    }
+
+    body {
   font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
   background-color: #f7f7f7;
@@ -15,19 +15,11 @@ body {
   transition: background 0.3s, color 0.3s;
 }
 
-/* Containers */
-.container {
-  width: 90%;
-  width: 90;
-  max-width: 1200px;
-  margin: auto;
-  padding: 1rem;
-}
 
 /* Header */
 .site-header {
-  background-color: #18392b;
-  background:#18392b ;
+  background-color: white;
+  background:#18392b;
   color: white;
   padding: 1rem 0;
 }
@@ -39,7 +31,7 @@ body {
   font-weight: bold;
 }
 
-.nav {
+  .nav {
   list-style: none;
   padding: 0;
   display: flex;
@@ -50,7 +42,6 @@ body {
 }
 
 
-
 .nav li a {
   color:white;
   text-decoration: none;
@@ -59,18 +50,34 @@ body {
 .nav li a:hover {
   text-decoration: underline;
 }
+    
+    .hero {
+      background-image: url('https://img.freepik.com/free-photo/hands-holding-cleaning-tools-solutions_53876-148192.jpg?ga=GA1.1.921970821.1743769475&semt=ais_hybrid&w=740');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 6rem 2rem;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+    .hero button {
+      padding: 0.75rem 1.5rem;
+      margin: 0.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
 
-/* Main Content */
-main h2 {
-  color: black;
-}
 
-.hero {
-  background-color: lemonchiffon;
-  padding: 2rem;
-  text-align: center;
-  margin-bottom: 2rem;
-}
+
 
 .button {
   display: inline-block;
@@ -82,40 +89,90 @@ main h2 {
   margin-top: 1rem;
 }
 
+
+
 .button:hover {
   background-color: #18392b;
 }
 
-/* Forms */
-form label {
-  display: block;
-  margin: 0.5rem 0 0.2rem;
-}
-
-form input,
-form textarea {
-  width: 100%;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-form button {
-  background-color: #18392b;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-form button:hover {
-  background-color: #18392b ;
-}
 
 
- 
+  
+    .sticky-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #2ecc71;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 50px;
+      font-weight: bold;
+      font-size: 1rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      cursor: pointer;
+      z-index: 999;
+    }
+    section {
+      padding: 4rem 2rem;
+    }
+    .services-grid, .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+
+    .form-section, .about, .faq {
+      background: white;
+    }
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input, select, textarea {
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: 1px solid white;
+      border-radius: 5px;
+    }
+    button[type="submit"] {
+      background: #2ecc71;
+      color: white;
+      border: none;
+      padding: 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .testimonials, .faq, .about {
+      text-align: center;
+    }
+    .testimonial {
+      max-width: 500px;
+      margin: 0 auto 2rem auto;
+      font-style: italic;
+    }
+    .testimonial::before {
+      content: "\201C";
+      font-size: 2rem;
+      color: #2ecc71;
+      vertical-align: top;
+    }
+    .faq-item {
+      max-width: 700px;
+      margin: 1rem auto;
+    }
+    .faq-item h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: #2ecc71;
+    }
+
+
 /* styling for Contact Eliza*/
 
  /* General Reset */
@@ -148,6 +205,7 @@ body {
   position: relative;
 }
 
+
 .contact-logo {
   width: 60px;
   height: 60px;
@@ -170,6 +228,8 @@ body {
   margin: 15px 0;
 }
 
+
+
 .contact-description {
   font-size: 8px;
   color: #444;
@@ -181,21 +241,12 @@ body {
 }
 
 
-/* Contact Methods */
-.contact-methods {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  background-color: #112f1f;
-  padding: 40px 20px;
-  margin-top: 30px;
-  gap: 20px;
-  border-radius: 0 0 10px 10px;
-}
+
+
 
 .method-box {
   background-color: #173c2b;
-  color: #fff;
+  color: #fafde8;
   padding: 20px 30px;
   border-radius: 10px;
   width: 250px;
@@ -211,8 +262,10 @@ body {
   height: 24px;
 }
 
+
+
 .method-box p {
-  color: #fff;
+  color: #fafde8;
   font-size: 14px;
   margin: 0;
 }
@@ -235,6 +288,7 @@ body {
   justify-content: space-between;
 }
 
+
 .contact-form {
   flex: 1;
   min-width: 300px;
@@ -253,6 +307,7 @@ body {
   flex: 1;
 }
 
+
 .form-group label {
   font-size: 14px;
   margin-bottom: 6px;
@@ -270,6 +325,7 @@ textarea {
   outline: none;
 }
 
+
 textarea {
   resize: vertical;
   min-height: 100px;
@@ -282,6 +338,8 @@ textarea {
   margin-top: 4px;
   color: #555;
 }
+
+
 
 .contact-form button {
   width: 100%;
@@ -324,6 +382,7 @@ textarea {
   justify-content: center;
 }
 
+
 .map-placeholder img {
   width: 100%;
   height: auto;
@@ -351,6 +410,7 @@ textarea {
 }
 
 
+
 .promo-section {
   padding: 60px 20px;
   display: flex;
@@ -359,7 +419,7 @@ textarea {
 
 .promo-box {
   position: relative;
-  background-color: #f7fde9;
+  background-color: #e5f7c4;
   border-radius: 12px;
   border: 1px solid #e5f7c4;
   padding: 40px;
@@ -376,10 +436,13 @@ textarea {
   flex-wrap: wrap;
 }
 
+
+
 .promo-text {
   flex: 1;
   min-width: 300px;
 }
+
 
 .promo-text h2 {
   font-size: 20px;
@@ -397,7 +460,7 @@ textarea {
 }
 
 .promo-btn button {
-  background-color: #c7f156;
+  background-color: yellowgreen;
   border: none;
   border-radius: 3px;
   padding: 8px 16px;
@@ -408,26 +471,50 @@ textarea {
 
 
 
+    
+
+ footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+    .map {
+      width: 100%;
+      height: 300px;
+      border: none;
+      margin-top: 2rem;
+    }
+    .footer-contact {
+      margin-top: 2rem;
+    }
+    .footer-contact p {
+      margin: 0.5rem 0;
+    }
+    .social-icons {
+      margin-top: 1rem;
+    }
+    .social-icons a {
+      margin: 0 0.5rem;
+      display: inline-block;
+      color: white;
+      font-size: 1.4rem;
+      text-decoration: none;
+    }
+    .footer-links {
+      margin-top: 1.5rem;
+    }
+    .footer-links a {
+      color: #ccc;
+      text-decoration: none;
+      margin: 0 0.75rem;
+      font-size: 0.9rem;
+    }
 
 
 
-/* Footer */
-.site-footer {
-  background-color: #18392b;
-  color: white;
-  text-align: center;
-  padding: 1rem 0;
-  margin-top: 3rem;
-}
 
-
-
-
-
-
-
-
-/* Advanced WhatsApp Widget */
+    /* Advanced WhatsApp Widget */
 #whatsapp-widget {
   position: fixed;
   bottom: 20px;

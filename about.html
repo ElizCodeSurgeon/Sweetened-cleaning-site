@@ -9,7 +9,7 @@
 <body>
   <header class="site-header">
     <div class="container">
-      <h1 class="logo">Sweetened Cleaning Services</h1>
+      <h1 class="logo">SweetEned</h1>
       <nav>
         <ul class="nav">
           <li><a href="index.html">Home</a></li>
@@ -17,47 +17,62 @@
           <li><a href="services.html">Services</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="recruitment.html">Recruitment</a></li>
+          <li><a href="hiring.html">Hiring</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <h2>About Us</h2>
-    <p><strong>💧 Let’s Get Things Sparkling – Contact Us Today</strong></p>
-    <p>At <strong>Sweetened Cleaning Services</strong>, we’re just a message away from transforming your space with precision, care, and a touch of freshness.</p>
 
+
+<main>
+<section class="about" id="about">
+    <h2>About Sweetened Cleaning Services</h2>
+    <p>At Sweetened Cleaning Services, we’re more than a mop and a bucket. Based in Kent, our professional team offers reliable, eco-friendly cleaning solutions for homes, offices, Airbnbs, and more. We take pride in providing service that’s not only spotless but thoughtful—tailored to your schedule, your needs, and your environment.</p>
+    <p>With years of experience and a commitment to excellence, our team is vetted, fully insured, and trained to deliver high-quality results you can see and feel. Whether it’s a one-off clean or a regular visit, we promise to leave your space fresh, healthy, and perfectly clean.</p>
+  </section>
+
+
+  <section class="Work Hours" id="Work Hours">
     <h3>📩 Get in Touch</h3>
     <p>Phone: <a href="tel:+44 7916 735336">+44 7916 735336</a><br>Email: sweetenedcleaningservices@gmail.com</p>
 
     <p><strong>Business Hours:</strong><br>🕒 Monday–Saturday: 8:00 AM – 6:00 PM<br>🖘 Emergency Cleaning Available 24/7</p>
 
-    <h3>📋 Contact Form</h3>
-    <form>
-      <label>Name: <input type="text" required></label><br>
-      <label>Email: <input type="email" required></label><br>
-      <label>Phone Number: <input type="tel"></label><br>
-      <label>Location: <input type="text"></label><br>
-      <fieldset>
-        <legend>Select Your Cleaning Needs:</legend>
-        <label><input type="checkbox"> Domestic Cleaning</label><br>
-        <label><input type="checkbox"> Commercial Cleaning</label><br>
-        <label><input type="checkbox"> Airbnb/Student Accommodation</label><br>
-        <label><input type="checkbox"> End-of-Tenancy</label><br>
-        <label><input type="checkbox"> Emergency Cleaning</label><br>
-        <label><input type="checkbox"> Post-Construction</label><br>
-        <label><input type="checkbox"> Caravan Cleaning</label><br>
-        <label><input type="checkbox"> Other</label><br>
-      </fieldset>
-      <label>Preferred Date/Time: <input type="datetime-local"></label><br>
-      <label>Message/Details:<br><textarea></textarea></label><br>
-      <button type="submit">Let’s Get It Clean!</button>
-    </form>
+    <p><strong>📍 Where We Work:</strong> Kent and surrounding areas.</p>
+   
 
-    <p><strong>📍 Where We Work:</strong>Kent and surrounding areas.</p>
-    <p><strong>💬 Quick Chat Option:</strong> Click the icon below to message us instantly on WhatsApp.</p>
-  </main>
+
+<section class="form-section" id="contact">
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="tel" name="phone" placeholder="Your Phone Number" required>
+      <select name="service" required>
+        <option value="">Select Service</option>
+        <option value="domestic">Commercial Cleaning</option>
+        <option value="domestic">Airbnb/Student Accommodation</option>
+        <option value="office">Office Cleaning</option>
+        <option value="airbnb">Domestic Cleaning</option>
+        <option value="tenancy">End-of-Tenancy</option>
+        <option value="hotel">Hotel Cleaning</option>
+        <option value="construction">Post-Construction</option>
+        <option value="caravan">Caravan Cleaning</option>
+      </select>
+      <input type="date" name="date" required>
+      <textarea name="message" placeholder="Additional Details (Optional)"></textarea>
+      <button type="submit">Submit Booking</button>
+    </form>
+  </section>
+</main>
+
+
+
+
+
+
+
+
 
   <footer class="site-footer">
     <div class="container">

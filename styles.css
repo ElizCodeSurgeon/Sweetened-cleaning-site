@@ -16,7 +16,7 @@
 }
 
 
-/* Header */
+
 .site-header {
   background-color: white;
   background:#18392b;
@@ -52,7 +52,7 @@
 }
     
     .hero {
-      background-image: url('https://img.freepik.com/free-photo/hands-holding-cleaning-tools-solutions_53876-148192.jpg?ga=GA1.1.921970821.1743769475&semt=ais_hybrid&w=740');
+      background-image: url('https://img.freepik.com/premium-photo/three-people-room-with-broom-mop_913495-3410.jpg?ga=GA1.1.921970821.1743769475&semt=ais_hybrid&w=740');
       background-size: cover;
       background-position: center;
       color: white;
@@ -173,9 +173,8 @@
     }
 
 
-/* styling for Contact Eliza*/
 
- /* General Reset */
+ 
  * {
   margin: 0;
   padding: 0;
@@ -184,11 +183,11 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #fafde8;
+  background-color: white;
   color: #222;
 }
 
-/* Wrapper */
+
 .contact-wrapper {
   padding: 60px 20px;
   text-align: center;
@@ -198,8 +197,8 @@ body {
 .contact-box {
   max-width: 900px;
   margin: auto;
-  background-color: #f6fbdf;
-  border: 1px solid #e4f1b5;
+  background-color: white;
+  border: 1px solid white;
   border-radius: 10px;
   padding: 40px 30px;
   position: relative;
@@ -210,7 +209,7 @@ body {
   width: 60px;
   height: 60px;
   margin: 0 auto 20px;
-  background: #eaf4c1;
+  background: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -246,7 +245,7 @@ body {
 
 .method-box {
   background-color: #173c2b;
-  color: #fafde8;
+  color: white;
   padding: 20px 30px;
   border-radius: 10px;
   width: 250px;
@@ -265,12 +264,12 @@ body {
 
 
 .method-box p {
-  color: #fafde8;
+  color: white;
   font-size: 14px;
   margin: 0;
 }
 .form-map-section {
-  background-color: #fafde8;
+  background-color: white;
   padding: 60px 20px;
 }
 
@@ -278,8 +277,8 @@ body {
 .form-map-container {
   max-width: 1100px;
   margin: auto;
-  background-color: #f6fbdf;
-  border: 1px solid #e4f1b5;
+  background-color: wheat;
+  border: 1px whitesmoke;
   border-radius: 10px;
   padding: 40px;
   display: flex;
@@ -317,7 +316,7 @@ body {
 input[type="text"],
 input[type="email"],
 textarea {
-  background-color: #f3fbcc;
+  background-color: whitesmoke;
   border: none;
   border-radius: 6px;
   padding: 12px;
@@ -344,7 +343,7 @@ textarea {
 .contact-form button {
   width: 100%;
   padding: 14px;
-  background-color: #d1f054;
+  background-color: whitesmoke;
   border: none;
   border-radius: 6px;
   font-weight: bold;
@@ -355,7 +354,7 @@ textarea {
 }
 
 .contact-form button:hover {
-  background-color: #c2e646;
+  background-color: whitesmoke;
 }
 
 
@@ -371,7 +370,7 @@ textarea {
 }
 
 .map-placeholder {
-  background-color: #112f1f;
+  background-color: #18392b;
   border-radius: 8px;
   overflow: hidden;
   width: 100%;
@@ -396,7 +395,7 @@ textarea {
 }
 
 .social-icons a {
-  background-color: #d1f054;
+  background-color: white;
   padding: 10px;
   border-radius: 4px;
   display: inline-flex;
@@ -474,7 +473,7 @@ textarea {
     
 
  footer {
-      background: #333;
+      background: #18392b;
       color: white;
       text-align: center;
       padding: 2rem;
@@ -514,7 +513,7 @@ textarea {
 
 
 
-    /* Advanced WhatsApp Widget */
+  
 #whatsapp-widget {
   position: fixed;
   bottom: 20px;

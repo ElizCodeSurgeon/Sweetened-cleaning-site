@@ -89,6 +89,14 @@ button.addEventListener('click', () => {
 
 
 
+// Toggle nav menu on hamburger click
+document.getElementById('hamburger').addEventListener('click', function () {
+  document.getElementById('nav-menu').classList.toggle('active');
+});
+
+
+
+
 // blog-script.js
 
 // Optional: Animate cards on scroll (basic fade-in)

@@ -33,6 +33,32 @@ forms.forEach(form => {
 
 
 
+// faq.js
+
+document.addEventListener("DOMContentLoaded", () => {
+  const questions = document.querySelectorAll(".faq-question");
+
+  questions.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const answer = btn.nextElementSibling;
+      const isOpen = btn.classList.contains("open");
+
+      // Close all
+      document.querySelectorAll(".faq-answer").forEach(a => a.style.display = "none");
+      document.querySelectorAll(".faq-question").forEach(q => q.classList.remove("open"));
+
+      // Toggle selected
+      if (!isOpen) {
+        answer.style.display = "block";
+        btn.classList.add("open");
+      }
+    });
+  });
+});
+
+
+
+
 
 
 

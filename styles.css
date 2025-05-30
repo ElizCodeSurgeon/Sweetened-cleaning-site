@@ -1,81 +1,174 @@
- body {
-   margin: 0;
-      font-family: Arial, sans-serif;
-      background: #fff;
-      color: white;
-    }
-
-    body {
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-  background-color: #f7f7f7;
-  color: #333;
-  background-color: var(--bg);
-  color: var(--text);
-  transition: background 0.3s, color 0.3s;
-}
-
-
-
-.site-header {
-  background-color: white;
-  background:#18392b;
-  color: white;
-  padding: 1rem 0;
-}
-
-
-.site-header .logo {
-  font-size: 1.8rem;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-  .nav {
-  list-style: none;
+ /* RESET */
+* {
+  margin: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 0.5rem;
-  justify-content: flex-end;
+  box-sizing: border-box;
 }
-
-
-.nav li a {
-  color:white;
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f6f3;
+  color: #222;
+  line-height: 1.6;
+}
+a {
   text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
 }
 
-.nav li a:hover {
-  text-decoration: underline;
+
+
+
+/* HEADER */
+.site-header {
+  background: #18392b;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #663399;
+}
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links a {
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: #663399;
+}
+.btn-primary {
+  background: #663399;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.btn-primary:hover {
+  background: #5a2c87;
 }
     
     .hero {
       background-image: url('https://img.freepik.com/premium-photo/three-people-room-with-broom-mop_913495-3410.jpg?ga=GA1.1.921970821.1743769475&semt=ais_hybrid&w=740');
       background-size: cover;
       background-position: center;
-      color: white;
+      color: #fff;
       text-align: center;
-      padding: 6rem 2rem;
+      padding: 8rem 3rem;
     }
-    .hero h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 1.5rem;
-    }
-    .hero button {
-      padding: 0.75rem 1.5rem;
-      margin: 0.5rem;
-      font-size: 1rem;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
+    
 
+
+
+  
+
+
+/* HERO */
+.hero-section {
+  background: #fff;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+.hero-icon {
+  font-size: 2rem;
+  color: #663399;
+  margin-bottom: 1rem;
+}
+.hero-section h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.hero-section p {
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+.feature-tags {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.feature-tags span {
+  background: #eee;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+/* CONTACT PAGE */
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 3rem auto;
+}
+.contact-info {
+  flex: 1 1 35%;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.contact-info p {
+  margin-bottom: 1rem;
+  color: #444;
+}
+.contact-info strong {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+.contact-form {
+  flex: 1 1 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+}
+.contact-form textarea {
+  resize: vertical;
+}
+.contact-form button {
+  align-self: flex-start;
+}
+#form-status {
+  margin-top: 0.5rem;
+  color: #663399;
+  font-size: 0.9rem;
+}
 
 
 
@@ -89,8 +182,6 @@
   margin-top: 1rem;
 }
 
-
-
 .button:hover {
   background-color: #18392b;
 }
@@ -98,21 +189,99 @@
 
 
   
-    .sticky-button {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #2ecc71;
-      color: #fff;
-      padding: 0.75rem 1.5rem;
-      border: none;
-      border-radius: 50px;
-      font-weight: bold;
-      font-size: 1rem;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-      cursor: pointer;
-      z-index: 999;
-    }
+
+
+
+/* About PAGE */
+.about-section {
+  margin: 3rem auto;
+  padding-bottom: 2rem;
+}
+.about-section h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  color: #663399;
+}
+.about-section p {
+  margin-bottom: 1rem;
+  color: #444;
+}
+.about-list {
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+.about-list li {
+  margin-bottom: 0.5rem;
+  list-style: none;
+  padding-left: 1.5rem;
+  position: relative;
+}
+.about-list li::before {
+  content: '✔️';
+  position: absolute;
+  left: 0;
+  color: #663399;
+}
+
+
+
+
+
+
+
+
+
+/* FAQ Grid */
+.faq-item {
+  background: #fff;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+.faq-question {
+  width: 100%;
+  padding: 1rem;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.faq-question.open {
+  color: #663399;
+}
+.faq-answer {
+  display: none;
+  padding: 0 1rem 1rem;
+  color: #444;
+}
+
+
+
+
+
+
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+.portfolio-item {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
     section {
       padding: 4rem 2rem;
     }
@@ -162,130 +331,10 @@
       color: #2ecc71;
       vertical-align: top;
     }
-    .faq-item {
-      max-width: 700px;
-      margin: 1rem auto;
-    }
-    .faq-item h3 {
-      font-size: 1.1rem;
-      margin-bottom: 0.5rem;
-      color: #2ecc71;
-    }
+    
 
 
 
- 
- * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: white;
-  color: #222;
-}
-
-
-.contact-wrapper {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-/* Contact Box */
-.contact-box {
-  max-width: 900px;
-  margin: auto;
-  background-color: white;
-  border: 1px solid white;
-  border-radius: 10px;
-  padding: 40px 30px;
-  position: relative;
-}
-
-
-.contact-logo {
-  width: 60px;
-  height: 60px;
-  margin: 0 auto 20px;
-  background: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(195, 235, 137, 0.3);
-}
-
-.contact-logo img {
-  width: 30px;
-  height: 30px;
-}
-
-.contact-box h2 {
-  font-size: 28px;
-  margin: 15px 0;
-}
-
-
-
-.contact-description {
-  font-size: 8px;
-  color: #444;
-  margin-top: 10px;
-  line-height: 1.6;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-
-
-
-.method-box {
-  background-color: #173c2b;
-  color: white;
-  padding: 20px 30px;
-  border-radius: 10px;
-  width: 250px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-.method-box img {
-  margin-bottom: 10px;
-  width: 24px;
-  height: 24px;
-}
-
-
-
-.method-box p {
-  color: white;
-  font-size: 14px;
-  margin: 0;
-}
-.form-map-section {
-  background-color: white;
-  padding: 60px 20px;
-}
-
-
-.form-map-container {
-  max-width: 1100px;
-  margin: auto;
-  background-color: wheat;
-  border: 1px whitesmoke;
-  border-radius: 10px;
-  padding: 40px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: space-between;
-}
 
 
 .contact-form {
@@ -339,7 +388,6 @@ textarea {
 }
 
 
-
 .contact-form button {
   width: 100%;
   padding: 14px;
@@ -356,6 +404,8 @@ textarea {
 .contact-form button:hover {
   background-color: whitesmoke;
 }
+
+
 
 
 
@@ -380,7 +430,6 @@ textarea {
   align-items: center;
   justify-content: center;
 }
-
 
 .map-placeholder img {
   width: 100%;
@@ -408,8 +457,6 @@ textarea {
   height: 18px;
 }
 
-
-
 .promo-section {
   padding: 60px 20px;
   display: flex;
@@ -435,13 +482,10 @@ textarea {
   flex-wrap: wrap;
 }
 
-
-
 .promo-text {
   flex: 1;
   min-width: 300px;
 }
-
 
 .promo-text h2 {
   font-size: 20px;
@@ -470,7 +514,7 @@ textarea {
 
 
 
-    
+
 
  footer {
       background: #18392b;

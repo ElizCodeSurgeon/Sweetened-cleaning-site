@@ -10,83 +10,109 @@
 
 
 
+
+  <!-- Header -->
   <header class="site-header">
-    <div class="container">
-      <h2 class="logo">SweetenedCleaning</h2>
+    <div class="container nav-bar">
+      <div class="logo">Sweetened Cleaning</div>
       <nav>
-        <ul class="nav">
+        <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="hiring.html">Hiring</a></li>
+          <li><a href="blog.html">Blog</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  
+
+
+  <!-- Hero CTA -->
+  <section class="hero-section">
+    <div class="container hero-content">
+      <div class="hero-icon">💬</div>
+      <h1>We’d love to hear from you.</h1>
+      <p>Have a question, request or feedback? Let’s chat.</p>
+      <div class="feature-tags">
+        <span>✅ 24/7 Support</span>
+        <span>⚡ Quick Response</span>
+        <span>📅 Flexible Hours</span>
+      </div>
+    </div>
+  </section>
 
 
 
-   
-      <main>
-        <section class="contact-wrapper">
-          <div class="contact-box">
-            <div class="contact-logo">
-              <img src="https://img.icons8.com/ios-filled/50/6f8f3f/flower.png" alt="Logo" />
-            </div>
-            <h2>Contact Us</h2>
-            <p class="contact-description">Thank you for considering Sweetened Cleaning Services.
-Whether you're looking for a custom cleaning plan, need assistance, or want to request a service — we’re here to support you.
 
-Submit your inquiry using the form below, and we’ll respond within one business day.
-For urgent requests, you can also reach us directly by phone or email.</p>
-          </div>
-        </section>
-    
-        <section class="form-map-section">
-          <div class="form-map-container">
-            <form class="contact-form">
-              <div class="form-row">
-                <div class="form-group">
-                  <label>Full Name</label>
-                  <input type="text" placeholder="Enter your Name">
-                </div>
-                <div class="form-group">
-                  <label>Email</label>
-                  <input type="email" placeholder="Enter your Email">
-                </div>
-              </div>
-        
-              <div class="form-group">
-                <label>Phone Number</label>
-                <input type="text" placeholder="Enter your Number">
-              </div>
-        
-              <div class="form-group">
-                <label>Message</label>
-                <textarea placeholder="Enter your Message" maxlength="250"></textarea>
-                <small>Max 250 Chars</small>
-              </div>
-        
-              <button type="submit">Send Message</button>
-            </form>
-        
-            <div class="map-social">
-              <div class="map-placeholder">
-                <img src="Map image" alt="Map"/>
-              </div>
-              <div class="social-icons">
-                <a href="#"><img src="https://img.icons8.com/ios-filled/24/000000/facebook-new.png" alt="Facebook" /></a>
-                <a href="#"><img src="https://img.icons8.com/ios-filled/24/000000/twitter.png" alt="Twitter" /></a>
-                <a href="#"><img src="https://img.icons8.com/ios-filled/24/000000/linkedin.png" alt="LinkedIn" /></a>
-              </div>
-            </div>
-          </div>
-        </section>
-        </main>
+  <!-- Contact Content -->
+  <section class="container contact-grid">
+    <!-- Left Info -->
+    <div class="contact-info">
+      <p><strong>Email Us:</strong><br /> sweetenedcleaning@gmail.com</p>
+      <p><strong>Call Us:</strong><br /> +44 123 456 7890</p>
+      <p><strong>Location:</strong><br /> Canterbury, Kent</p>
+      <p><strong>Social:</strong></p>
+      <div class="footer-socials">
+        <a href="#"><img src="assets/icons/facebook.svg" /></a>
+        <a href="#"><img src="assets/icons/instagram.svg" /></a>
+        <a href="#"><img src="assets/icons/linkedin.svg" /></a>
+      </div>
+    </div>
+
+
+
+
+    <!-- Contact Form -->
+    <form id="contact-form" class="contact-form">
+      <input type="text" name="firstName" placeholder="First Name" required />
+      <input type="text" name="lastName" placeholder="Last Name" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="tel" name="phone" placeholder="Phone Number" />
+<select name="service" required>
+        <option value="">Select Service</option>
+        <option value="domestic">Domestic Cleaning</option>
+        <option value="office">Office & Commercial</option>
+        <option value="airbnb">Airbnb Turnover</option>
+        <option value="tenancy">End-of-Tenancy</option>
+        <option value="hotel">Hotel Cleaning</option>
+        <option value="construction">Post-Construction</option>
+        <option value="caravan">Caravan Cleaning</option>
+      </select>
+      <input type="date" name="date" required>
+      <textarea name="message" placeholder="Your Message..." rows="5" required></textarea>
+      <button type="submit" class="btn-primary">Send</button>
+      <p id="form-status"></p>
+    </form>
+  </section>
+
+
+
+  <!-- FAQ Section (reusable) -->
+  <section class="container">
+  <h2 style="text-align:center;">Frequently Asked Questions</h2>
+  <div class="faq-grid">
+
+    <div class="faq-item">
+      <button class="faq-question">Do you offer emergency cleaning?</button>
+      <div class="faq-answer">Yes! We offer urgent cleaning services based on availability.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Can I book recurring visits?</button>
+      <div class="faq-answer">Absolutely, we offer flexible plans for weekly, bi-weekly or monthly service.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Are your products eco-friendly?</button>
+      <div class="faq-answer">Yes — all our supplies are safe for kids, pets, and the planet.</div>
+    </div>
+
+  </div>
+</section>
+
 
 
 

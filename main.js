@@ -84,3 +84,26 @@ button.addEventListener('click', () => {
   const message = encodeURIComponent(messages[topicText]);
   window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
 });
+
+
+
+
+
+// blog-script.js
+
+// Optional: Animate cards on scroll (basic fade-in)
+const cards = document.querySelectorAll('.blog-card');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, {
+  threshold: 0.1
+});
+
+cards.forEach(card => {
+  observer.observe(card);
+});

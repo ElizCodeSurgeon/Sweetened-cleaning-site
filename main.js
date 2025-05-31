@@ -1,3 +1,5 @@
+console.log('main.js loaded');
+
 // main.js
 
 // Scroll to top on page load
@@ -89,13 +91,6 @@ button.addEventListener('click', () => {
 
 
 
-// Toggle nav menu on hamburger click
-document.getElementById('hamburger').addEventListener('click', function () {
-  document.getElementById('nav-menu').classList.toggle('active');
-});
-
-
-
 
 // blog-script.js
 
@@ -114,4 +109,30 @@ const observer = new IntersectionObserver((entries) => {
 
 cards.forEach(card => {
   observer.observe(card);
+});
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
+
+  if (hamburger && navMenu) {
+    hamburger.addEventListener('click', function () {
+      navMenu.classList.toggle('active');
+    });
+  }
+});
+
+
+
+
+
+// Toggle nav menu on hamburger click
+document.getElementById('hamburger').addEventListener('click', function () {
+  document.getElementById('nav-menu').classList.toggle('active');
 });

@@ -101,3 +101,49 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
+
+
+
+
+
+
+
+
+// Wait for the DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function () {
+
+  // Handle click on email to copy to clipboard
+  const emailElements = document.querySelectorAll('.contact-info p, .overlay li');
+  emailElements.forEach(el => {
+    if (el.textContent.includes('@')) {
+      el.style.cursor = 'pointer';
+      el.title = 'Click to copy email';
+      el.addEventListener('click', function () {
+        const email = el.textContent.match(/\S+@\S+\.\S+/)[0];
+        navigator.clipboard.writeText(email).then(() => {
+          alert(`Email copied: ${email}`);
+        });
+      });
+    }
+  });
+
+  // Smooth scroll to the hiring section when the page loads (optional)
+  const hiringSection = document.querySelector('.hiring-container');
+  if (hiringSection) {
+    setTimeout(() => {
+      hiringSection.scrollIntoView({ behavior: 'smooth' });
+    }, 800);
+  }
+
+  // Optional: Apply click confirmation
+  const applyNowItems = document.querySelectorAll('.overlay li');
+  applyNowItems.forEach(item => {
+    if (item.textContent.includes('Apply now')) {
+      item.style.cursor = 'pointer';
+      item.addEventListener('click', function () {
+        alert('Thanks for your interest! Please send your details to sweetenedcleaningservices@gmail.com');
+      });
+    }
+  });
+
+});

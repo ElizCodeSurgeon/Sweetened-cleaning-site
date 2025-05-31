@@ -376,8 +376,9 @@ ul {
       font-size: 1rem;
       cursor: pointer;
       border-radius: 5px;
-    }
-    .testimonials, .faq, .about {
+   }
+  
+     .testimonials, .faq, .about {
       text-align: center;
     }
     .testimonial {
@@ -388,10 +389,12 @@ ul {
     .testimonial::before {
       content: "\201C";
       font-size: 2rem;
-      color:#285c3e;
+      color: #2ecc71;
       vertical-align: top;
     }
-    
+
+
+
 
 
 
@@ -460,6 +463,97 @@ textarea {
 .contact-form button:hover {
   background-color: whitesmoke;
 }
+
+
+
+
+
+.hiring-banner {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #e6f4ea;
+}
+
+.hiring-banner h1 {
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.hiring-banner p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  font-weight: 500;
+}
+
+.hiring-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  min-height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.card-1 {
+  background-image: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952'); /* Replace with your own image */
+}
+
+.card-2 {
+  background-image: url('https://images.unsplash.com/photo-1600047501730-7b2872c18d90'); /* Replace with your own image */
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.overlay h2 {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.overlay li {
+  margin-bottom: 10px;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .hiring-container {
+    flex-direction: row;
+  }
+
+  .card {
+    flex: 1;
+  }
+}
+
 
 
 

@@ -1,6 +1,4 @@
-console.log('main.js loaded');
-
-// main.js
+ console.log('main.js loaded');
 
 // Scroll to top on page load
 window.addEventListener('load', () => {
@@ -30,13 +28,8 @@ forms.forEach(form => {
     }
   });
 });
-  
-
-
-
 
 // faq.js
-
 document.addEventListener("DOMContentLoaded", () => {
   const questions = document.querySelectorAll(".faq-question");
 
@@ -58,24 +51,17 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
-
-
-
-
-
-
 // WhatsApp Widget Logic
 const toggle = document.getElementById('whatsapp-toggle');
 const popup = document.getElementById('whatsapp-popup');
 const button = document.getElementById('start-chat');
 const topic = document.getElementById('whatsapp-topic');
 
-toggle.addEventListener('click', () => {
+toggle?.addEventListener('click', () => {
   popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
 });
 
-button.addEventListener('click', () => {
+button?.addEventListener('click', () => {
   const phone = '447123456789'; // Replace with your number
   const topicText = topic.value;
   const messages = {
@@ -87,14 +73,7 @@ button.addEventListener('click', () => {
   window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
 });
 
-
-
-
-
-
 // blog-script.js
-
-// Optional: Animate cards on scroll (basic fade-in)
 const cards = document.querySelectorAll('.blog-card');
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -111,12 +90,7 @@ cards.forEach(card => {
   observer.observe(card);
 });
 
-
-
-
-
-
-
+// Hamburger menu logic (only once!)
 document.addEventListener('DOMContentLoaded', function () {
   const hamburger = document.getElementById('hamburger');
   const navMenu = document.getElementById('nav-menu');
@@ -126,13 +100,4 @@ document.addEventListener('DOMContentLoaded', function () {
       navMenu.classList.toggle('active');
     });
   }
-});
-
-
-
-
-
-// Toggle nav menu on hamburger click
-document.getElementById('hamburger').addEventListener('click', function () {
-  document.getElementById('nav-menu').classList.toggle('active');
 });

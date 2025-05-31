@@ -6,7 +6,7 @@
 }
 body {
   font-family: 'Segoe UI', sans-serif;
-  background:white;
+  background:whitesmoke;
   color: #333;
   line-height: 1.6;
 }
@@ -101,7 +101,7 @@ ul {
 }
 .hero-icon {
   font-size: 2rem;
-  color: green;
+  color: white;
   margin-bottom: 1rem;
 }
 .hero-section h1 {
@@ -187,6 +187,71 @@ ul {
 
 
 
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+  gap: 20px;
+}
+
+.about-card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  min-height: 300px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  color: whitesmoke;
+}
+
+.card-story {
+  background-image: url('https://img.freepik.com/free-photo/business-hands-joined-together-teamwork_53876-30575.jpg?ga=GA1.1.921970821.1743769475&semt=ais_items_boosted&w=740'); /* Replace with a relevant image */
+}
+
+.card-mission {
+  background-image: url('https://img.freepik.com/free-photo/businessman-big-office_53876-144319.jpg?ga=GA1.1.921970821.1743769475&semt=ais_items_boosted&w=740'); /* Replace with a relevant image */
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.overlay h2 {
+  font-size: 26px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.overlay p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .about-section {
+    flex-direction: row;
+  }
+
+  .about-card {
+    flex: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
 /* CONTACT PAGE */
 .contact-grid {
   display: flex;
@@ -266,11 +331,11 @@ ul {
 .about-section h2 {
   margin-top: 2rem;
   margin-bottom: 0.5rem;
-  color: green;
+  color: whitesmoke;
 }
 .about-section p {
   margin-bottom: 1rem;
-  color: green;
+  color: white;
 }
 .about-list {
   margin-top: 1rem;

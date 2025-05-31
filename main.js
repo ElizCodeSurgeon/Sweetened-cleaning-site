@@ -147,3 +147,38 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 });
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const cards = document.querySelectorAll('.about-card');
+
+  // Fade-in effect when cards enter the viewport
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, {
+    threshold: 0.3
+  });
+
+  cards.forEach(card => {
+    observer.observe(card);
+  });
+
+  // Optional: Smooth scroll to about section on load
+  const aboutSection = document.querySelector('.about-section');
+  if (aboutSection) {
+    setTimeout(() => {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }, 500);
+  }
+});
+
+

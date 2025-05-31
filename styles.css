@@ -28,15 +28,30 @@ ul {
 
 /* HEADER */
 .site-header {
-  background: #2ecc71;
+  background: green;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
+
 .nav-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo-img {
+  width: 30px; /* Adjust size as needed */
+  height: 40px;
+  margin-right: 8px;
+}
+
 .logo {
   font-weight: bold;
   font-size: 1.5rem;
@@ -51,10 +66,10 @@ ul {
   transition: color 0.3s;
 }
 .nav-links a:hover {
-  color: #663399;
+  color: white;
 }
 .btn-primary {
-  background: #663399;
+  background: whitesmoke;
   color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 6px;
@@ -62,7 +77,7 @@ ul {
   transition: background 0.3s;
 }
 .btn-primary:hover {
-  background: blue;
+  background: white;
 }
     
     .hero {
@@ -78,8 +93,6 @@ ul {
 
 
 
-
-
 /* HERO */
 .hero-section {
   background: #fff;
@@ -88,7 +101,7 @@ ul {
 }
 .hero-icon {
   font-size: 2rem;
-  color: #663399;
+  color: green;
   margin-bottom: 1rem;
 }
 .hero-section h1 {
@@ -111,7 +124,6 @@ ul {
   border-radius: 20px;
   font-size: 0.9rem;
 }
-
 
 
 
@@ -228,7 +240,6 @@ ul {
   font-size: 0.9rem;
 }
 
-
 .button {
   display: inline-block;
   padding: 0.6rem 1.2rem;
@@ -240,12 +251,10 @@ ul {
 }
 
 .button:hover {
-  background-color: #18392b;
+  background-color: green;
 }
 
 
-
-  
 
 
 
@@ -257,7 +266,7 @@ ul {
 .about-section h2 {
   margin-top: 2rem;
   margin-bottom: 0.5rem;
-  color: #663399;
+  color: green;
 }
 .about-section p {
   margin-bottom: 1rem;
@@ -277,11 +286,8 @@ ul {
   content: '✔️';
   position: absolute;
   left: 0;
-  color: #663399;
+  color: green;
 }
-
-
-
 
 
 
@@ -307,7 +313,7 @@ ul {
   cursor: pointer;
 }
 .faq-question.open {
-  color: #663399;
+  color: green;
 }
 .faq-answer {
   display: none;
@@ -337,8 +343,6 @@ ul {
 
 
 
-
-
     section {
       padding: 4rem 2rem;
     }
@@ -347,7 +351,6 @@ ul {
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 2rem;
     }
-
 
     .form-section, .about, .faq {
       background: white;
@@ -366,7 +369,7 @@ ul {
       border-radius: 5px;
     }
     button[type="submit"] {
-      background: #2ecc71;
+      background: #285c3e;
       color: white;
       border: none;
       padding: 1rem;
@@ -385,11 +388,10 @@ ul {
     .testimonial::before {
       content: "\201C";
       font-size: 2rem;
-      color: #2ecc71;
+      color:#285c3e;
       vertical-align: top;
     }
     
-
 
 
 
@@ -412,7 +414,6 @@ ul {
   flex: 1;
 }
 
-
 .form-group label {
   font-size: 14px;
   margin-bottom: 6px;
@@ -430,7 +431,6 @@ textarea {
   outline: none;
 }
 
-
 textarea {
   resize: vertical;
   min-height: 100px;
@@ -443,7 +443,6 @@ textarea {
   margin-top: 4px;
   color: #555;
 }
-
 
 .contact-form button {
   width: 100%;
@@ -467,7 +466,7 @@ textarea {
 
 
 
-/* Blog Grid */
+
 .blog-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -503,7 +502,7 @@ textarea {
 
 .blog-card h3 {
   font-size: 1.25rem;
-  color: #003366;
+  color: green;
   padding: 0 1rem;
 }
 
@@ -517,11 +516,9 @@ textarea {
   display: block;
   padding: 0.5rem 1rem 1rem;
   font-weight: bold;
-  color: #004080;
+  color: green;
   text-decoration: underline;
 }
-
-
 
 .blog-card {
   opacity: 0;
@@ -534,21 +531,12 @@ textarea {
   transform: translateY(0);
 }
 
-
-
 /* Responsive tweaks */
 @media (max-width: 500px) {
   .blog-grid {
     grid-template-columns: 1fr;
   }
 }
-
-
-
-
-
-
-
 
 
 
@@ -566,7 +554,7 @@ textarea {
 }
 
 .map-placeholder {
-  background-color: #18392b;
+  background-color: green;
   border-radius: 8px;
   overflow: hidden;
   width: 100%;
@@ -663,7 +651,7 @@ textarea {
 
 
  footer {
-      background: #18392b;
+      background: green;
       color: white;
       text-align: center;
       padding: 2rem;
@@ -737,7 +725,7 @@ textarea {
 
 #whatsapp-popup h4 {
   margin: 0 0 0.5rem;
-  color: #004080;
+  color: green;
 }
 
 #whatsapp-popup p {

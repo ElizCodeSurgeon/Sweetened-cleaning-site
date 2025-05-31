@@ -648,7 +648,7 @@ textarea {
 }
 
 .map-placeholder {
-  background-color: green;
+  background-color: white;
   border-radius: 8px;
   overflow: hidden;
   width: 100%;
